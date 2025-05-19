@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>RoboTsiabi </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>TsiabiX</title>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -15,7 +15,7 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>  <br />
-							technology & science</h1>
+							Technology & Science</h1>
 						<h2> Digital interaction digital inovation</h2>
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -23,7 +23,9 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Tsiabi </a>
+						<a href="index.html" class="logo">
+	                       <img src="images/tsiabix.png" alt="TSIABIX" style="height: 40px;" />
+                        </a>
 					</header>
 
 				<!-- Nav -->
@@ -47,16 +49,14 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="https://github.com/Tsiabi/Tsiabi.github.io/blob/main/DiDi_robot.ino">And this is a<br />
+									<span class="date" id="post-date"></span>
+									<h2><a href="https://github.com/Tsiabi/tsiabix-esp8266/blob/main/esp8266_automatic_watering.ino">And this is a<br />
 									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p>Automatic watering system</p>
 								</header>
-								<a href="https://github.com/Tsiabi/Tsiabi.github.io/blob/main/DiDi_robot.ino" class="image main"><img src="images/note-thanun-PwrpyXDfpT8-unsplash.jpg" alt="" /></a>
+								<a href="https://github.com/Tsiabi/tsiabix-esp8266/blob/main/esp8266_automatic_watering.ino" class="image main"><img src="images/note-thanun-PwrpyXDfpT8-unsplash.jpg" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/Tsiabi/Tsiabi.github.io/blob/main/DiDi_robot.ino" class="button large">Full Story</a></li>
+									<li><a href="https://github.com/Tsiabi/tsiabix-esp8266/blob/main/esp8266_automatic_watering.ino" class="button large">Full Story</a></li>
 								</ul>
 							</article>
 
@@ -184,11 +184,11 @@
 							</section>
 							<section>
 								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<p><a href="#"></a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p><a href="mailto">evandetsabi1@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -196,7 +196,7 @@
 									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/Tsiabi" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -204,7 +204,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Tsiabi - All Rights Reserved</li><li>Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Tsiabi - All Rights Reserved</li><li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
@@ -217,6 +217,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		    <script>
+               const dateElement = document.getElementById('post-date');
+               const today = new Date();
+               const options = { year: 'numeric', month: 'long', day: 'numeric' };
+               dateElement.textContent = today.toLocaleDateString(undefined, options);
+            </script>
 
 	</body>
 </html>
