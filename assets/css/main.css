@@ -3589,10 +3589,13 @@ input, select, textarea {
 			}
 
 			#header .logo img {
-                height: 70px; 
-                width: auto; 
-				z-index: 1000;  
+                position: fixed; 
+                top: 20px; 
+				left: 20px;
+				height: 100px;
+				width: auto;
                 transition: height 0.3s ease; 
+				z-index: 1000;
             }
 
 
