@@ -3587,6 +3587,13 @@ input, select, textarea {
 				height: 14rem;
 				padding-bottom: 4rem;
 			}
+			
+			#header .logo img {
+                height: 100px; 
+                width: auto;   
+                transition: height 0.3s ease; 
+            }
+
 
 		}
 
